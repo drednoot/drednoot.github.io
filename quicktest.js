@@ -16,26 +16,14 @@ var score_count = 0;
 var btns = [];
 
 for (let i = 1; i <= 4; i++) {
-	button = document.getElementById("btn" + i);
+	let button = new Button(i);
 	btns.push(button);
-	btns[i - 1].addEventListener("click", function() { callback(btns[i - 1]); } );
 }
 
 var previous = Object.keys(answer_keys)[randint(0, Object.keys(answer_keys).length - 1)];
 var answer = randomize()[1];
 
-function callback(instance){
-	if (instance.value == answer) {
-		score_count += 1;
-		score.textContent = "Score: " + score_count;
-		answer = randomize()[1];
-	} else if (instance.style.background == "#B00000") {}
-	else {
-		score_count -= 1;
-		score.textContent = 'Score: ' + score_count;
-		instance.style.background = "#B00000";
-	}
-}
+reset_answer(answer);
 
 function randomize() {
 	let btn_answers = []
@@ -48,6 +36,8 @@ function randomize() {
 
 	let answer = answer_keys[face];
 	btn_answers.push(answer);
+
+	reset_answer(answer);
 
 	let result = null;
 
@@ -71,9 +61,31 @@ function randomize() {
 
 	text.textContent = face
 	for (let i = 0; i < 4; i++){
-		btns[i].value = btn_answers[i];
-		btns[i].style.background = "#5A5A5A";
+		btns[i].nullify(btns[i], btn_answers[i]); 
 	}
 
 	return [face, answer, btn_answers]
+}
+
+function update_score(change){
+	score_count += change;
+	score.textContent = "Score: " + score_count;
+}
+
+function reset_answer(ans){
+	for (let i = 0; i < 4; i++) {
+		btns[i].answer = ans;
+	}
+}
+
+function change_pseudo_style(css){
+	let style = document.createElement('style');
+
+	if (style.styleSheet) {
+	    style.styleSheet.cssText = css;
+	} else {
+	    style.appendChild(document.createTextNode(css));
+	}
+
+	document.getElementsByTagName('head')[0].appendChild(style);
 }
