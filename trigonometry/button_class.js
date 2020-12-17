@@ -4,7 +4,7 @@ class Button{
 	}
 
 	that_constructor(that, id){
-		that.id = "btn" + id
+		that.id = "btn" + id;
 		that.button = document.getElementById(that.id);
 	
 		that.value;
@@ -20,6 +20,17 @@ class Button{
 
 		document.getElementById(that.id).classList.add("red_button");
 
+		if (highscore_count < score_count) {
+			highscore_count = score_count;
+		}
+
+		// changing overlay text
+		document.getElementById("right_ans").textContent = "Правильный ответ: " + that.answer;
+		document.getElementById("score").textContent = "Ваш счёт: " + score_count;
+		document.getElementById("highscore").textContent = "Лучший результат: " + highscore_count;
+
+		enable_overlay();
+
 		return that
 	}
 
@@ -30,8 +41,8 @@ class Button{
 			document.getElementById(that.id).classList.remove("red_button");
 		document.getElementById(that.id).classList.add("button");
 
-		that.value = value
-		that.button.value = that.value
+		that.value = value;
+		that.button.value = that.value;
 
 		return that
 	}
@@ -47,5 +58,5 @@ class Button{
 	}
 
 	return that
-}
+	}
 }

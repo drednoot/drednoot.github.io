@@ -6,17 +6,31 @@
 		<meta content="text/html; charset=utf-8">
 
 		<link rel="stylesheet" href="trigonometry.css">
+		<script type="text/javascript" src="preload.js" charset="utf-8"></script>
+
 		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	</head>
 	<body>
-		<div id="overlay"></div>
+		<div id="overlay">
+			<div class="centeralize_overlay">
+				<text class="gameover_text">ИГРА ОКОНЧЕНА!</text>
+				<text id="right_ans" class="right_ans_text">Правильный ответ: right_ans</text>
+				<text id="score" class="score_highscore_text">Ваш счёт: score</text>
+				<text id="highscore" class="score_highscore_text">Лучший результат: highscore</text>
+				<div class="restart_btn_fix"><input type="button" value="Начать сначала" id="restart_btn" class="restart_button" onclick="restart_game();"></div>
+			</div>
+		</div>
+
 		<div class="main_text">
 			<text id="main_text">main_text</text>
 		</div>
+
 		<div class="score_text">
 			<text id="score_text">score_text</text>
+			<text id="highscore_text">highscore_text</text>
 		</div>
+		
 		<div class="button_row">
 			<input class="button" type="button" value="butt_1" id="btn1">
 			<input class="button" type="button" value="butt_2" id="btn2">

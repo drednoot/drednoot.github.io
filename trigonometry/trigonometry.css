@@ -1,0 +1,226 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	background-color: black;
+}
+@media (max-width: 1000px) {
+	body {
+		height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+		height: calc(var(--vh, 1vh) * 100);
+	}
+}
+
+/*############################################   main   ###############################################*/
+
+.main_text {
+	background: black;
+	height: 65%;
+
+	display: flex;
+	overflow: auto;
+}
+
+.main_text text {
+	color: white;
+	font-size: 9vh;
+	font-family: monospace, serif;
+
+	margin: auto;
+}
+
+/*############################################   score   #################################################*/
+
+.score_text {
+	background: black;
+	height: 10%;
+	font-family: monospace, serif;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.score_text text {
+	color: white;
+	font-size: 5vh;
+	margin-left: 50px;
+	margin-right: 50px;
+
+	display: flex;
+}
+
+/*#########################################   buttons   #############################################*/
+
+.button_row {
+	background: #4B4A45;
+	width: 100%;
+	height: 25%;
+	display: flex;
+}
+
+/*###########                           plain*/
+
+.button {
+	display: block;
+	flex: 1;
+	height: 100%;
+	font-family: monospace, serif;
+
+	background-color: gray;
+	border: 0;
+	outline: none;
+	color: white;
+
+	font-size: 5vh;
+}
+
+.button:active {
+	background-color: #545454;
+}
+
+/*##########                       red*/
+
+.red_button {
+	background-color: red;
+}
+
+/*#################          phone fix*/
+
+@media (max-width: 1000px) {
+	.main_text text{
+
+	}
+
+	.main_text{
+
+	}
+	
+	.score_text text{
+
+	}
+
+	.score_text{
+
+	}
+
+	.button{
+
+	}
+}
+
+/*#########################################   overlay   ##########################################*/
+
+#overlay {
+	position: fixed; /* Sit on top of the page content */
+	display: none; /* Hidden by default */
+	width: 100%; /* Full width (cover the whole page) */
+	height: 100vh;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.8); /* Black background with opacity */
+	z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+	cursor: pointer; /* Add a pointer on hover */
+}
+@media (max-width: 1000px) {
+	#overlay {
+		height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+		height: calc(var(--vh, 1vh) * 100);
+	}
+}
+.centeralize_overlay{
+	height: 100%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+/*#####################           overlay content*/
+
+.gameover_text{
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 4vw;
+	font-family: "comic sans ms", serif;
+}
+
+.right_ans_text{
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3vh;
+	font-size: 3vw;
+	font-family: "comic sans ms", serif;
+}
+
+.score_highscore_text{
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1vh;
+	font-size: 2vw;
+	font-family: "comic sans ms", serif;
+}
+
+/*#######################             button*/
+
+.restart_button{
+	font-family: monospace, serif;
+
+	background-color: gray;
+	border: 0;
+	outline: none;
+	color: white;
+
+	font-size: 4vw;
+
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	margin: 0 auto;
+	margin-top: 5vh;
+
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.restart_button:active{
+	background-color: #545454;
+}
+
+.restart_button_fix{
+	min-width: 0;
+
+	display: flex;
+	justify-content: center;
+}
+
+/*#################          phone fix*/
+
+@media (max-width: 1000px) {
+	.gameover_text {
+		font-size: 5vh;
+	}
+
+	.right_ans_text{
+		font-size: 3vh;
+	}
+
+	.score_highscore_text{
+		font-size: 2.5vh;
+	}
+
+	.restart_button{
+		font-size: 5vh;
+	}
+}
