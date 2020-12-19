@@ -1,4 +1,4 @@
-var answer_keys = {'sin30': '1/2', 'sin45': '√2/2', 'sin60': '√3/2', 'cos30': '√3/2', 'cos45': '√2/2', 'cos60': '1/2', 'tg30': '√3/3', 'tg45': '1', 'tg60': '√3', 'ctg30': '√3', 'ctg45': '1', 'ctg60': '√3/3'};
+answer_keys = handle_params();
 
 function randint(min, max) {
 	min = Math.ceil(min);
