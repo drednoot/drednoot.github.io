@@ -25,7 +25,7 @@ class Button{
 		}
 
 		// changing overlay text
-		document.getElementById("right_ans").textContent = "Правильный ответ: " + that.answer;
+		document.getElementById("right_ans").textContent = "Правильный ответ: \\(\\ \\)" + that.answer;
 		document.getElementById("score").textContent = "Ваш счёт: " + score_count;
 		document.getElementById("highscore").textContent = "Лучший результат: " + highscore_count;
 
@@ -42,7 +42,9 @@ class Button{
 		document.getElementById(that.id).classList.add("button");
 
 		that.value = value;
-		that.button.value = that.value;
+		that.button.textContent = that.value;
+
+		new_typeset();
 
 		return that
 	}

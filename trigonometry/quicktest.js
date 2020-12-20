@@ -98,8 +98,13 @@ function restart_game(){
 
 function enable_overlay(){
 	document.getElementById("overlay").style.display = "block";
+	new_typeset();
 }
 
 function disable_overlay(){
 	document.getElementById("overlay").style.display = "none";
+}
+
+function new_typeset(){
+	MathJax.typeset();
 }
