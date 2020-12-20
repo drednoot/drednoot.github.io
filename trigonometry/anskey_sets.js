@@ -1,6 +1,6 @@
 var anskey_sets = {
 	"9grade" : {
-		'sin0' : '(0)',
+		'sin0' : '0',
 		'sin30': '1/2',
 		'sin45': '√2/2',
 		'sin60': '√3/2',

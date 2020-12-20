@@ -19,6 +19,6 @@ function handle_params()
 	if (anskey_sets[anskey_set]){
 		return anskey_sets[anskey_set]
 	} else{
-		return ninth_grade
+		return anskey_sets["9grade"]
 	}
 }
