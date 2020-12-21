@@ -41,4 +41,26 @@ var anskey_sets = {
 		'ctg60': '√3/3',
 		},
 
+	"3gonnametriya" : {
+		'\\(\\sin (\\alpha + \\beta )\\)' : '\\(\\sin \\alpha \\cos \\beta +\\cos \\alpha \\sin \\beta\\)',
+		'\\(\\sin (\\alpha - \\beta )\\)' : '\\(\\sin \\alpha \\cos \\beta -\\cos \\alpha \\sin \\beta\\)',
+		'\\(\\cos (\\alpha + \\beta )\\)' : '\\(\\cos \\alpha \\cos \\beta - \\sin \\alpha \\sin \\beta\\)',
+		'\\(\\cos (\\alpha - \\beta )\\)' : '\\(\\cos \\alpha \\cos \\beta + \\sin \\alpha \\sin \\beta\\)',
+		'\\(\\text{tg}(\\alpha + \\beta )\\)' : '\\(\\frac{\\text{tg} \\ \\alpha + \\text{tg} \\ \\beta }{1 - \\text{tg} \\ \\alpha \\ \\text{tg} \\ \\beta }\\)',
+		'\\(\\text{tg}(\\alpha - \\beta )\\)' : '\\(\\frac{\\text{tg} \\ \\alpha - \\text{tg} \\ \\beta }{1 + \\text{tg} \\ \\alpha \\ \\text{tg} \\ \\beta }\\)',
+		'\\(\\sin 2 \\alpha\\)' : '\\(2 \\sin \\alpha \\cos \\alpha \\)',
+		'\\(\\cos 2 \\alpha\\)' : '\\(\\cos ^2 \\alpha - \\sin ^2 \\alpha \\)',
+		'\\(\\text{tg} \\ 2 \\alpha\\)' : '\\(\\frac{2 \\text{tg} \\ \\alpha }{1 - \\text{tg} ^2 \\ \\alpha }\\)',
+		'\\(\\sin ^2 \\frac{\\alpha }{2}\\)' : '\\(\\frac{1 - \\cos \\alpha }{2}\\)',
+		'\\(\\cos ^2 \\frac{\\alpha }{2}\\)' : '\\(\\frac{1 + \\cos \\alpha }{2}\\)',
+		'\\(\\text{tg} \\ \\frac{\\alpha }{2}\\)' : '\\(\\frac{\\sin \\alpha }{1 + \\cos \\alpha }\\)',
+		'\\(\\text{tg} \\ \\frac{\\alpha }{2}\\)' : '\\(\\frac{1 - \\cos \\alpha }{\\sin \\alpha }\\)',
+		'\\(\\sin \\alpha \\cos \\beta\\)' : '\\(\\frac{\\sin (\\alpha + \\beta ) + \\sin (\\alpha - \\beta )}{2}\\)',
+		'\\(\\sin \\alpha \\sin \\beta\\)' : '\\(\\frac{\\cos (\\alpha - \\beta ) - \\cos (\\alpha + \\beta )}{2}\\)',
+		'\\(\\cos \\alpha \\cos \\beta\\)' : '\\(\\frac{\\cos (\\alpha + \\beta ) + \\cos (\\alpha - \\beta )}{2}\\)',
+		'\\(\\sin \\alpha + \\sin \\beta\\)' : '\\(2 \\sin \\frac{\\alpha + \\beta }{2} \\cos \\frac {\\alpha - \\beta }{2}\\)',
+		'\\(\\sin \\alpha - \\sin \\beta\\)' : '\\(2 \\sin \\frac{\\alpha - \\beta }{2} \\cos \\frac {\\alpha + \\beta }{2}\\)',
+		'\\(\\cos \\alpha + \\cos \\beta\\)' : '\\(2 \\cos \\frac{\\alpha + \\beta }{2} \\cos \\frac {\\alpha - \\beta }{2}\\)',
+		'\\(\\cos \\alpha - \\cos \\beta\\)' : '\\(-2 \\sin \\frac{\\alpha + \\beta }{2} \\sin \\frac {\\alpha - \\beta }{2}\\)',
+		}
 }
