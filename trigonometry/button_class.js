@@ -53,10 +53,13 @@ class Button{
 	if (that.value == that.answer) {
 		randomize()[1];
 		update_score(1);
+		doc_body.classList.remove("green_body");
+		void doc_body.offsetWidth;
+		doc_body.classList.add("green_body");
+
 	} else if (that.answered) {
 	} else {
 		that.change_answered_true(that);
-		update_score(-1);
 	}
 
 	return that

@@ -1,21 +1,23 @@
-answer_keys = handle_params();
+const answer_keys = handle_params();
+
+const text = document.getElementById("main_text");
+text.innerHTML = "main_text";
+
+const highscore = document.getElementById("highscore_text");
+highscore.textContent = "Highscore: 0";
+var highscore_count = 0;
+
+const score = document.getElementById("score_text");
+score.textContent = "Score: 0";
+var score_count = 0;
+
+const doc_body = document.body;
 
 function randint(min, max) {
 	min = Math.ceil(min);
 	max = Math.floor(max) + 1;
 	return Math.floor(Math.random() * (max - min)) + min;
 }
-
-var text = document.getElementById("main_text");
-text.innerHTML = "main_text";
-
-var highscore = document.getElementById("highscore_text");
-highscore.textContent = "Highscore: 0";
-var highscore_count = 0;
-
-var score = document.getElementById("score_text");
-score.textContent = "Score: 0";
-var score_count = 0;
 
 var btns = [];
 
