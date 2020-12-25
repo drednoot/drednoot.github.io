@@ -4,6 +4,7 @@
 	height: 30%;
 	display: flex;
 	flex-wrap: wrap;
+	overflow: hidden; 
 }
 
 /*###########                           plain*/

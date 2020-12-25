@@ -1,10 +1,13 @@
 .score_text {
 	/*background: #2F3136;*/
 	height: 15%;
+	width: 100%;
+
 	font-family: monospace, serif;
 
 	display: flex;
 	flex-wrap: wrap;
+	overflow: hidden; 
 }
 
 .score_text text {

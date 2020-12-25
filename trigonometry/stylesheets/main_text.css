@@ -1,9 +1,10 @@
 .main_text {
 	/*background: #2F3136;*/
 	height: 55%;
+	width: 100%;
 
 	display: flex;
-	/*overflow: auto;*/
+	overflow: hidden; 
 }
 
 .main_text text {

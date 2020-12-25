@@ -3,6 +3,7 @@ body {
 	height: 100vh;
 	margin: 0;
 	background-color: #2F3136;
+	overflow: hidden; 
 }
 @media screen and (orientation:portrait) {
 	body {
