@@ -1,0 +1,25 @@
+.main_text {
+	/*background: #2F3136;*/
+	height: 55%;
+
+	display: flex;
+	/*overflow: auto;*/
+}
+
+.main_text text {
+	color: #B9BBBE;
+	font-size: 12vh;
+	font-family: monospace, serif;
+
+	margin: auto;
+}
+
+@media screen and (orientation:portrait) {
+	.main_text text{
+		font-size: 6.5vh;
+	}
+
+	.main_text{
+		height: 45%;
+	}
+}

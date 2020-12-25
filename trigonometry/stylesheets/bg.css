@@ -1,0 +1,30 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	background-color: #2F3136;
+}
+@media screen and (orientation:portrait) {
+	body {
+		height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+		height: calc(var(--vh, 1vh) * 100);
+	}
+}
+
+
+/*transition  **************************/
+
+.green_body{
+	animation: green 2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@keyframes green {
+
+  0% {
+    background: #43B581;
+  }
+
+  100% {
+    background: #2F3136;
+  }
+}
