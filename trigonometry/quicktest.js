@@ -1,11 +1,16 @@
-const answer_keys = handle_params();
+const ansks_name = handle_params();
+const answer_keys = return_anskey_set(ansks_name);
+if (getCookie(ansks_name) == ""){
+	setCookie(ansks_name, 0, 365);
+}
 
 const text = document.getElementById("main_text");
 text.innerHTML = "main_text";
 
 const highscore = document.getElementById("highscore_text");
-highscore.textContent = "Highscore: 0";
-var highscore_count = 0;
+var highscore_count = getCookie(ansks_name);
+highscore.textContent = "Highscore: " + highscore_count;
+
 
 const score = document.getElementById("score_text");
 score.textContent = "Score: 0";
@@ -79,8 +84,9 @@ function update_score(change){
 
 	if (highscore_count < score_count) {
 		highscore_count = score_count;
+		updateCHighscore(highscore_count, ansks_name);
+		highscore.textContent = "Highscore: " + highscore_count;
 	}
-	highscore.textContent = "Highscore: " + highscore_count;
 }
 
 function reset_answer(ans){
