@@ -1,6 +1,6 @@
 .main_text {
 	/*background: #2F3136;*/
-	height: 55%;
+	height: 48%;
 	width: 100%;
 
 	display: flex;
@@ -21,6 +21,6 @@
 	}
 
 	.main_text{
-		height: 45%;
+		height: 38%;
 	}
 }

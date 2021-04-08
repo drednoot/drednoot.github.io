@@ -1,0 +1,26 @@
+.header {
+	height: 7%;
+	width: 100%;
+
+	display: grid;
+	grid-template-columns: 7% 1fr 15%;
+	overflow: hidden;
+
+}
+
+a {
+	margin: auto;
+	color: white;
+	text-decoration: initial;
+	font-size: 3vh;
+}
+
+/*@media screen and (orientation:portrait) {
+	.main_text text{
+		font-size: 6.5vh;
+	}
+
+	.main_text{
+		height: 45%;
+	}
+}*/
