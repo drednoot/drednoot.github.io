@@ -1,0 +1,45 @@
+.body{
+	width: 100vw;
+}
+
+.link{
+	display: flex;
+	justify-content: left;
+	align-items: left;
+
+	margin: auto;
+	text-align: center;
+
+	font-size: 2rem;
+}
+
+.changelog{
+	text-align: left;
+
+	margin-top: 50px;
+	overflow: auto;
+
+	font-size: 1.5rem;
+
+}
+
+.changelog .title{
+	display: flex;
+	justify-content: start;
+	align-items: left;
+	font-size: 2rem;
+	font-weight: bold;
+	font-family: monospace, "comic sans ms", serif;
+}
+
+.github{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	font-weight: bold;
+	color: black;
+
+	font-family: monospace, "comic sans ms", serif;
+}
+

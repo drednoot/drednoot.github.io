@@ -1,0 +1,16 @@
+@media screen and (orientation:portrait) {
+	header {
+		display: none;
+	}
+
+	.wrapper {
+		display: grid;
+		grid-template-rows: 10% 1fr;
+	}
+
+	.sidemenu {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+	}
+}

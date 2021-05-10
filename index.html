@@ -1,88 +1,146 @@
 <!DOCTYPE html>
+<html>
+<head>
+	<title id="tabname">Тренажёр по тригонометрии</title>
+	<!-- <script src="livereload.js"></script> -->
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
-<HTML>
-	<head>
-		<title>index.html</title>
-		<meta content="text/html; charset=utf-8">
-		<link rel="stylesheet" href="index.css">
-	</head>
-	<body>
-		<a href="trigonometry/trigonometry.html?anskeys=9grade" class="link">тест по тригонометрии (9 кл табличные значения синусов, косинусов, тг, ктг)</a><br>
-		<a href="trigonometry/trigonometry.html?anskeys=3gonnametriya" class="link">тест по тригонометрии (10 кл суммы, произведения синусов, косинусов, тангенсов)</a><br>
-		<a class="github" href="https://github.com/drednoot/drednoot.github.io">github</a>
-		<div class="changelog">
-			<text class="title">changelog</text><br>
+	<link rel="stylesheet" href="index.css">
+	<!-- <link rel="stylesheet" href="phone_view.css"> -->
+	
+</head>
+<body>
+	<header>
+		<text id="title">Тренажёр по тригонометрии</text>
+	</header>
+	<div class="wrapper">
+		<div class="sidemenu">
+			<button id="1btn">A</button>
+			<button id="2btn">T</button>
+			<button id="3btn">C</button>
+			<button id="4btn" style="font-family: italic; font-style: italic;">i</button>
+		</div>
+		<!-- About -->
+		<div class="main" id="1">
+			<div class="p">
+			<h2>Что это такое?</h2>
+			<p>Это тренажёр, с помощью которого можно проверить свои знания о тригонометрии. Есть как тренажёр на знания табличных значений углов функцй синуса, косинуса, тангенса и котангенса, так и формулы сумм и произведений синусов, косинусов для 11-тиклассников.</p>
+			</div>
 
-			v0.53 c 08.04.2021<br>
-			хэдер
+			<div class="p">
+			<h2>Как это использовать?</h2>
+			<p>Тренажёр доступен по ссылкам во вкладке "T". Для вас будет показано начало формулы, а вам нужно будет её продолжить, выбрав один из четырёх вариантов. При выборе верного ответа, вы сможете продолжить тренироваться. Если вы ошибётесь, будет предложено начать всё сначала, а счётчик ваших правильных ответов сбросится до нуля. Постарайтесь набрать как можно больше очков пока учите формулы!</p>
+			</div>
+
+			<div class="p">
+			<h2>О запоминании</h2>
+			<p>Каждый человек по-своему запоминает предметы. У кого-то хорошая фотографическая память, кому-то проще запоминать информацию, несколько раз её прослушав. <br> Возможно, кто-то хочет выучить все эти тригонометрические формулы, но ни один способ ему не помогает, тогда есть шанс, что моё приложение всё-таки поможет. 100% запоминание не гарантируется, но вы можете хотя бы дать такому способу шанс.</p>
+			</div>
+		</div>
+		<!-- Tests -->
+		<div class="main" id="2" style="display: none;">
+			<div class="p">
+			<h2>
+				Непосредственно тесты
+			</h2>
+			<a href="trigonometry/trigonometry.html?anskeys=9grade">тест по тригонометрии (9 кл табличные значения синусов, косинусов, тг, ктг)</a><br><br>
+			<a href="trigonometry/trigonometry.html?anskeys=3gonnametriya" class="link">тест по тригонометрии (10 кл суммы, произведения синусов, косинусов, тангенсов)</a>
+			</div>
+		</div>
+		<!-- Changelog -->
+		<div class="main" id="3" style="display: none;">
+			<div class="changelog">
+			<p>v0.6 с 10.05</p>
 			<ul>
-				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/38">#38. Сделал нечто похожее на хэдер.</a></li>
+				<text>Основная страница</text>
+				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/2">#2. </a>Оформил вид главной страницы (index.html)</li>
+				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/4">#4. </a>Заполнил описание</li>
 			</ul>
 
-			v0.52 c 3.01.2021<br>
-			куки
+			<p>v0.53 c 08.04.2021</p>
 			<ul>
-				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/13">#13. Подключил highscore к куки. Теперь при перезагрузке страницы highscore не обнуляется, а значит можно пофлексить перед челиками с низким хайскором</a></li>
+				<text>хэдер</text>
+				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/38">#38. </a>Сделал нечто похожее на хэдер.</li>
 			</ul>
 
-			v0.51_1 c 25.12.2020<br>
-			багфикс
+			<p>v0.52 c 3.01.2021</p>
 			<ul>
+				<text>куки</text>
+				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/13">#13. </a>Подключил highscore к куки. Теперь при перезагрузке страницы highscore не обнуляется, а значит можно пофлексить перед челиками с низким хайскором</li>
+			</ul>
+
+			<p>v0.51_1 c 25.12.2020</p>
+			<ul>
+				<text>багфикс</text>
 				<li>Возможно пофиксил что-то, но это не точно</li>
 			</ul>
 
-			v0.51 c 21.12.2020<br>
-			Добавлен пак с тестами
+			<p>v0.51 c 21.12.2020</p>
 			<ul>
-				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/5">#5. Сделал тест по геометрии для 10-го класса + фикс интерфейса для мобилок с этим связанный</a></li>
+				<text>Добавлен пак с тестами</text>
+				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/5">#5. </a>Сделал тест по геометрии для 10-го класса + фикс интерфейса для мобилок с этим связанный</li>
 			</ul>
 
-			v0.50 c 21.12.2020<br>
-			Улучшения в интерфейсе приложения
+			<p>v0.50 c 21.12.2020</p>
 			<ul>
-				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/10">#10. Анимация правильного ответа (+положил начало другим анимациям)</a></li>
-				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/31">#33. Закруглены кнопки</a></li>
-				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/25">#25. Изменена расцветка</a></li>
-				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/32">#32. Больше нет уменьшения скора (решение потенциального бага)</a></li>
+				<text>Улучшения в интерфейсе приложения</text>
+				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/10">#10. </a>Анимация правильного ответа (+положил начало другим анимациям)</li>
+				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/31">#33. </a>Закруглены кнопки</li>
+				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/25">#25. </a>Изменена расцветка</li>
+				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/32">#32. </a>Больше нет уменьшения скора (решение потенциального бага)</li>
 			</ul>
 
-			v0.40 c 20.12.2020<br>
-			mathjax
+			<p>v0.40 c 20.12.2020</p>
 			<ul>
-				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/7">#7. Подключен mathjax (красивое отображение математических формул)</a></li>
-				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/31">#31. input поменяны на button</a></li>
-				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/8">#8. Основной тест по геометрии переделан для mathjax</a></li>
+				<text>mathjax</text>
+				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/7">#7. </a>Подключен mathjax (красивое отображение математических формул)</li>
+				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/31">#31. </a>input поменяны на button</li>
+				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/8">#8. </a>Основной тест по геометрии переделан для mathjax</li>
 			</ul>
 
-			v0.30 c 20.12.2020<br>
-			Улучшеное отображение для телефона
+			<p>v0.30 c 20.12.2020</p>
 			<ul>
-				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/21">#21. Сделано нормальное отображение для ведра</a></li>
+				<text>Улучшеное отображение для телефона</text>
+				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/21">#21. </a>Сделано нормальное отображение для ведра</li>
 			</ul>
 
-			v0.20_1 c 19.12.2020
+			<p>v0.20_1 c 19.12.2020</p>
 			<ul>
-				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/20">#20. Пофикшен баг со скроллом</a></li>
-				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/17">#17. Мне стало легче создавать новые паки с вопросами</a></li>
+				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/20">#20. </a>Пофикшен баг со скроллом</li>
+				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/17">#17. </a>Мне стало легче создавать новые паки с вопросами</li>
 			</ul>
 
-			v0.20 c 17.12.2020<br>
-			Экран проигрыша
+			<p>v0.20 c 17.12.2020</p>
 			<ul>
-				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/12">#12. Сделал end-screen, highscore (продолжение ниже),</a></li>
-				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/11">#11 рестарт при неверном ответе (ниже),</a></li>
-				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/18">#18 отображение правильного ответа после неудачи</a></li>
-				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/20">#20. Потенциально пофикшен баг со скроллом на телефонах</a></li>
-				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/23">#23. немного поменял размеры шрифтов на телефоне, но ещё нужно дорабатывать</a></li>
+				<text>Экран проигрыша</text>
+				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/12">#12. </a>Сделал end-screen, highscore (продолжение ниже),</li>
+				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/11">- #11 </a>рестарт при неверном ответе (ниже),</li>
+				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/18">- #18 </a>отображение правильного ответа после неудачи</li>
+				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/20">#20. </a>Потенциально пофикшен баг со скроллом на телефонах</li>
+				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/23">#23. </a>немного поменял размеры шрифтов на телефоне, но ещё нужно дорабатывать</li>
 			</ul>
 
-			v0.10_1 c 15.12.2020
+			<p>v0.10_1 c 15.12.2020</p>
 			<ul>
-				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/22">#22. исправлен баг уменьшения скора при нажатии на красную кнопку</a></li>
-				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/23">#23. кнопки переписаны на классы </a></li>
-				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/9">#9. кнопки улучшены </a></li>
-				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/24">#24. сделана эта страница </a></li>
+				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/22">#22. </a>исправлен баг уменьшения скора при нажатии на красную кнопку</li>
+				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/23">#23. </a>кнопки переписаны на классы </li>
+				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/9">#9. </a>кнопки улучшены </li>
+				<li><a href="https://github.com/drednoot/drednoot.github.io/issues/24">#24. </a>сделана эта страница </li>
 			</ul>
+			</div>
 		</div>
-	</body>
-</HTML>
+		<!-- Info -->
+		<div class="main" id="4" style="display: none;">
+			<div class="info">
+				<text>Мой замечательный <a href="https://github.com/drednoot/drednoot.github.io">гитхаб</a> со всеми замечательными исходниками (кривокодом на коленке)</text><br><br><br>
+				<a href="https://vk.com/p_bl_ji_o">замечательный Миша</a><br><br>
+				<img src="https://cdn.discordapp.com/attachments/562578797178781716/840993240798199808/OknvUa7Yc6U.jpg" alt="замечательный Миша">
+
+			</div>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript" src="main.js"></script>
+
+</html>
